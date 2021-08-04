@@ -56,10 +56,10 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 //    array is empty, return `undefined`.
 
 function getLast( array ) {
-  let lastItem = array.length - 1;
+  let lastItem = array[array.length - 1];
 
   if ( lastItem ){
-  return array[array.length - 1];
+  return lastItem;
 } else ( array.length < 0 )
   return;
 }
