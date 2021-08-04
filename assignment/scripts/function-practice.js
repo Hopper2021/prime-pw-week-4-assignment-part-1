@@ -69,9 +69,15 @@ console.log( 'The last item in the array is:', getLast(['First', 'Second', 'Last
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 function find( value, array ){
+  for ( let i=0; i<array.length; i++ ){
 
+    if ( value === array[i] ){
+      console.log( 'What did we find:', array[i] ); // Checking the output value
+      return true;
+    }
+  } return false;
 }
-
+ console.log( 'Return true if keys are found:', find( 'keys', ['lint roller', 'phone charger', 'keys', 'shoes I lost a while ago'] ) );
 // ----------------------
 // Stretch Goals
 // ----------------------
