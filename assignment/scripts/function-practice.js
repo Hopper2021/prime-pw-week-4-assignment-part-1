@@ -57,12 +57,13 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 function getLast( array ) {
   let lastItem = array.length - 1;
+
   if ( lastItem ){
   return array[array.length - 1];
 } else ( array.length < 0 )
   return;
 }
-console.log( 'The last item in the array is:', getLast([]) );
+console.log( 'The last item in the array is:', getLast(['First', 'Second', 'Last']) );
 
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
