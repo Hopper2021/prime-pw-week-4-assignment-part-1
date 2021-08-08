@@ -105,11 +105,14 @@ console.log( 'The sum of all the numbers in this array is: ', sumAll( [6, 3, 10,
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
+let array = [];
+
 function positiveNums( array ){
-    let result = array.filter[number => number > 0];
+    let result = array.filter( number => number > -1 );
+    return result;
   }
 
- console.log( positiveNums(-2, 4, -107, 56, -24, -9, 1) );
+ console.log( 'The positive numbers in the array are:', positiveNums( [-2, 4, -107, 56, -24, -9, 1] ) );
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
